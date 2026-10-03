@@ -1,0 +1,15 @@
+{
+  "name": "tripod-shell",
+  "productName": "三脚架",
+  "version": "1.0.0",
+  "description": "三脚架 · 独立窗口壳（Electron）：把本机面板包成一个原生窗口",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}

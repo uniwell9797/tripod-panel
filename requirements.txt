@@ -1,0 +1,14 @@
+# 三脚架（Tripod Panel）所需的 Python 依赖
+#
+# 建议直接装在 **ComfyUI 自己的 venv** 里（面板默认就用那个解释器跑）：
+#   <ComfyUI>/.venv/Scripts/pip install -r requirements.txt
+#
+# 说明：面板本身只是个本机网页服务 + ComfyUI 客户端，**推理全部交给 ComfyUI**，
+#       所以这里依赖很少。真正吃显卡的是 ComfyUI 和模型。
+
+numpy>=1.24
+opencv-python>=4.8
+
+# 可选：只有「换脸 / 衣服遮罩」这几个功能才需要
+# insightface>=0.7.3
+# onnxruntime>=1.16

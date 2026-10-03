@@ -1,0 +1,53 @@
+{
+  "_说明": "复制本文件为 panel_config.json 后按自己的机器填。panel_config.json 属于本机私有配置，不要提交到仓库。带 _ 的键是注释，程序会忽略。",
+
+  "comfy_dir": "C:/ComfyUI",
+  "_comfy_dir": "ComfyUI 的源码目录（里面要有 main.py）。win 举例：D:/ComfyUI 或 C:/Users/<你>/ComfyUI",
+
+  "comfy_python": "",
+  "_comfy_python": "跑 ComfyUI 用的解释器。Windows **强烈建议 pythonw.exe**（python.exe 会弹一个终端黑窗）。留空则自动找 <comfy_dir>/../.venv/Scripts/pythonw.exe",
+
+  "user_dir": "",
+  "_user_dir": "ComfyUI 的 user 目录（存放你的工作流/设置）。留空默认 <comfy_dir>/user",
+
+  "input_dir": "",
+  "_input_dir": "输入图目录。留空默认 <comfy_dir>/input",
+
+  "output_dir": "",
+  "_output_dir": "出图目录（作品栏读这里）。留空默认 <comfy_dir>/output",
+
+  "model_roots": [],
+  "_model_roots": "模型根目录列表（可多个，对应 ComfyUI 的 extra_model_paths）。留空默认 [<comfy_dir>/models]",
+
+  "lora_dir": "",
+  "_lora_dir": "LoRA 目录（界面里的 LoRA 插槽用它）。留空则取第一个存在 <模型根>/loras 的目录",
+
+  "insightface_dir": "",
+  "_insightface_dir": "换脸用的 insightface 目录（buffalo_l 与 inswapper_128.onnx）。留空默认 <模型根>/insightface",
+
+  "ffmpeg": "",
+  "ffprobe": "",
+  "_ffmpeg": "视频后期/转码要用的 ffmpeg、ffprobe。留空则在 PATH 里找",
+
+  "pose_workflow": "",
+  "_pose_workflow": "动作姿态编辑器用的工作流模板路径。留空默认 <user_dir>/default/workflows/FisherPose_姿势自由编辑.json",
+
+  "node_fp8_loader": "",
+  "_node_fp8_loader": "可选：加载 FP8 权重用的第三方 ComfyUI 节点类名。留空时遇到 FP8 模型会给出中文提示",
+
+  "node_outpaint_canvas": "",
+  "_node_outpaint_canvas": "可选：扩图功能用的第三方节点类名（画面合成）。留空则扩图会提示需要配置",
+
+  "node_outpaint_composite": "",
+  "_node_outpaint_composite": "可选：扩图功能用的第三方节点类名（结果合成）",
+
+  "node_prompt_enhance": "",
+  "_node_prompt_enhance": "可选：提示词增强（扩写/反推）用的第三方节点类名",
+
+  "access_mode": "local",
+  "_access_mode": "local=只允许本机访问；lan=允许同一局域网访问（谨慎开启）",
+
+  "comfy_port": 8188,
+  "open_comfy": false,
+  "save_dir": ""
+}

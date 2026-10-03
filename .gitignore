@@ -1,0 +1,68 @@
+# ---- 本机私有配置：绝对不要提交 --------------------------------
+panel_config.json
+shell/data/
+**/shell.log
+*.log
+
+# ---- 运行期产物（含使用者自己的图片/视频，禁止入库）-------------
+# ⚠ 这份清单要和代码里实际写盘的目录名一一对应（第三方审查指出过对不上）：
+#   panel.py 会往 BASE_DIR 写 _缩略图/、图片描述/、姿势库/、pose_editor/、_隐藏清单.json
+input/
+output/
+runs/
+_缩略图/
+图片描述/
+姿势库/
+pose_editor/
+_隐藏清单.json
+人偶图/
+_回收站/
+queue.json
+
+# ---- Python ----------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+mask_preview.png
+
+# ---- Node / Electron 外壳 --------------------------------------
+node_modules/
+shell/node_modules/
+shell/package-lock.json
+dist/
+
+# ---- 编辑器 / 系统 --------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 双保险：所有图片/视频/音频默认不入库，只放行明确要发布的素材 ----
+# 规则是「先全排，再白名单放行」；加了新图标/截图记得在下面补一行 ! 例外。
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.ico
+*.svg
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.flac
+*.m4a
+# —— 白名单：仓库里这些是故意要发布的（图标 + 已确认无个人信息的截图）——
+!logo_128.png
+!logo_256.png
+!logo_256.ico
+!brand_lockup.png
+!docs/screens/*.png
